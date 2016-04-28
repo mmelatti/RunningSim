@@ -120,10 +120,10 @@
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="Photon3Unity3D">
- <HintPath>/Users/macbookair2010/Desktop/RunningSimulator/Assets/Plugins/Photon3Unity3D.dll</HintPath>
+ <HintPath>/Users/macbookair2010/GitHub/RunningSim/RunningSimulator/Assets/Plugins/Photon3Unity3D.dll</HintPath>
  </Reference>
  <Reference Include="websocket-sharp">
- <HintPath>/Users/macbookair2010/Desktop/RunningSimulator/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
+ <HintPath>/Users/macbookair2010/GitHub/RunningSim/RunningSimulator/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

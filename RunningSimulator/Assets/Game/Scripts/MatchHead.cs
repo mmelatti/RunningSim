@@ -16,7 +16,11 @@ public class MatchHead : MonoBehaviour {
 	void Update () {
 		if (PlayerPrefs.GetString ("Camera") == "mainCamera") {
 			//this.gameObject.transform = head.gameObject.transform;
-			this.gameObject.transform.position = playerhead.gameObject.transform.position;
+			Vector3 myTransform = playerhead.gameObject.transform.position;
+			myTransform.y = myTransform.y + 1;
+
+
+			this.gameObject.transform.position = myTransform;
 			//this.gameObject.transform.rotation = head.gameObject.transform.rotation;
 		}
 	}

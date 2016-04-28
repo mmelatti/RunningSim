@@ -22,7 +22,9 @@ public class MovePlayer : MonoBehaviour {
 	}
 
 	public void Run(){
-		StartCoroutine(RunCoroutine());
+		if (PlayerPrefs.GetString ("Camera") == "cardboard") {
+			StartCoroutine (RunCoroutine ());
+		}
 		//myRigidBody.velocity = eye.transform.forward * 2f;
 	}
 
@@ -67,9 +69,5 @@ public class MovePlayer : MonoBehaviour {
 		} else if (day == 6) {
 			PlayerPrefs.SetFloat ("SaturdayMiles", PlayerPrefs.GetFloat ("SaturdayMiles") + .1f);
 		}
-
-
-
-
 	}
 }

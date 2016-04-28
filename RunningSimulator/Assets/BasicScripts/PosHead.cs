@@ -15,6 +15,7 @@ public class PosHead : MonoBehaviour {
 		if (PlayerPrefs.GetString ("Camera") == "cardboard") {
 			this.gameObject.transform.position = Head.transform.position;
 		} else {
+			//this.gameObject.transform.position = Head.transform.position; //testing
 			//do nothing
 		}
 	}

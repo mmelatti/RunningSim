@@ -5,7 +5,7 @@ public class RotateCamera : MonoBehaviour {
 
 	public float speed = 2f;
 
-	void Update () {
+	void FixedUpdate () {
 		this.gameObject.transform.Rotate (Vector3.up, speed * Time.fixedDeltaTime);
 	}
 }

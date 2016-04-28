@@ -87,6 +87,22 @@ ModelImporter:
     4300026: tree_04_leaves_001
     4300028: tree_05_trunk_002
     4300030: tree_05_leaves_002
+    6400000: tree_01_leaves_003
+    6400002: tree_01_trunk_003
+    6400004: tree_02_leaves_003
+    6400006: tree_02_trunk_003
+    6400008: tree_03_leaves_012
+    6400010: tree_03_trunk_012
+    6400012: tree_04_leaves_001
+    6400014: tree_04_trunk_001
+    6400016: tree_05_leaves_002
+    6400018: tree_05_trunk_002
+    6400020: treeTrunk_01_GEO_001
+    6400022: treeTrunk_01a_GEO_001
+    6400024: treeTrunk_02_GEO_001
+    6400026: treeTrunk_02a_GEO_001
+    6400028: treeTrunk_03_GEO_001
+    6400030: treeTrunk_03a_GEO_001
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -115,10 +131,10 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
-    importBlendShapes: 1
+    addColliders: 1
+    importBlendShapes: 0
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
@@ -130,7 +146,7 @@ ModelImporter:
     useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 3
   importAnimation: 1
   copyAvatar: 0
