@@ -89,6 +89,7 @@
      <Compile Include="Assets\Game\Scripts\OnStartBase.cs" />
      <Compile Include="Assets\Game\Scripts\PrintToScreen.cs" />
      <Compile Include="Assets\Game\Scripts\PushupCounter.cs" />
+     <Compile Include="Assets\Game\Scripts\Pushupstat.cs" />
      <Compile Include="Assets\Game\Scripts\RotateCamera.cs" />
      <Compile Include="Assets\Game\Scripts\RunTracking.cs" />
      <Compile Include="Assets\Game\Scripts\TitleWithTouch.cs" />
