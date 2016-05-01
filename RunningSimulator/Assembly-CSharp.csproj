@@ -82,6 +82,7 @@
      <Compile Include="Assets\Game\Scripts\CalendarKeeper.cs" />
      <Compile Include="Assets\Game\Scripts\EventHandlerTitle.cs" />
      <Compile Include="Assets\Game\Scripts\FindIfNewWeek.cs" />
+     <Compile Include="Assets\Game\Scripts\Gametrak.cs" />
      <Compile Include="Assets\Game\Scripts\GetRunTracking.cs" />
      <Compile Include="Assets\Game\Scripts\MatchHead.cs" />
      <Compile Include="Assets\Game\Scripts\MovePlayer.cs" />
