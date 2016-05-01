@@ -1,9 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Game/Scripts/CalendarKeeper.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Assets/Game/Scripts/FindIfNewWeek.cs" Line="27" Column="53" />
-      <File FileName="Assets/Game/Scripts/CalendarKeeper.cs" Line="27" Column="13" />
+      <File FileName="Assets/Game/Scripts/CalendarKeeper.cs" Line="1" Column="1" />
+      <File FileName="Assets/Game/Scripts/MatchHead.cs" Line="1" Column="1" />
+      <File FileName="Assets/Game/Scripts/MovePlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets/BasicScripts/PosHead.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
