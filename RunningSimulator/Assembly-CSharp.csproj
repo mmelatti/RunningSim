@@ -89,6 +89,7 @@
      <Compile Include="Assets\Game\Scripts\PrintToScreen.cs" />
      <Compile Include="Assets\Game\Scripts\RotateCamera.cs" />
      <Compile Include="Assets\Game\Scripts\RunTracking.cs" />
+     <Compile Include="Assets\Game\Scripts\TrackingDeviceText.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\CustomTypes.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Enums.cs" />
      <Compile Include="Assets\Photon Unity Networking\Plugins\PhotonNetwork\Extensions.cs" />
