@@ -1,24 +1,38 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class TitleWithTouch : MonoBehaviour {
 
-	private bool canStartCoroutine = false;
+	private bool canStartCoroutine = true;
 	private bool canExit = true;
+	private PhotonView myPhotonView; 
+
+	void OnJoinedRoom()
+	{
+		myPhotonView =this.GetComponent<PhotonView>();
+	}
 
 	void Start () {
-		canStartCoroutine = false;
+		canStartCoroutine = true;
 	}
 	
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.O)) {
-			StartCoroutine (DoSwitchLevel ());
+		if (Input.touchCount == 1) {
+			this.myPhotonView.RPC("Test", PhotonTargets.All);
+		}
 
+		if (Input.GetKeyDown (KeyCode.O)) {
+			callExit ();
+			StartCoroutine (DoSwitchLevel ());
 		}
 		if (Input.touchCount >= 3 && canStartCoroutine) {
 			canStartCoroutine = false;
 			StartCoroutine (timer ());
 		}
+	}
+
+	public void callExit(){
+		this.myPhotonView.RPC("Exit", PhotonTargets.All);
 	}
 
 	IEnumerator timer(){
@@ -31,6 +45,7 @@ public class TitleWithTouch : MonoBehaviour {
 			}
 		}
 		if (canExit) {
+			callExit ();
 			StartCoroutine (DoSwitchLevel ());
 		}
 		canStartCoroutine = true;
@@ -38,9 +53,20 @@ public class TitleWithTouch : MonoBehaviour {
 
 	IEnumerator DoSwitchLevel ()
 	{
+		yield return new WaitForSeconds(3f);
 		PhotonNetwork.Disconnect ();
 		while (PhotonNetwork.connected)
 			yield return null;
 		Application.LoadLevel("Title");
+	}
+
+	[PunRPC]
+	public void Exit(){
+		StartCoroutine (DoSwitchLevel ());
+	}
+
+	[PunRPC]
+	public void Test(){
+		Debug.Log ("RPC Works");
 	}
 }
