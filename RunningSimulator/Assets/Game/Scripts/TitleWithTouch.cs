@@ -17,10 +17,6 @@ public class TitleWithTouch : MonoBehaviour {
 	}
 	
 	void Update () {
-		if (Input.touchCount == 1) {
-			this.myPhotonView.RPC("Test", PhotonTargets.All);
-		}
-
 		if (Input.GetKeyDown (KeyCode.O)) {
 			callExit ();
 			StartCoroutine (DoSwitchLevel ());
@@ -63,10 +59,5 @@ public class TitleWithTouch : MonoBehaviour {
 	[PunRPC]
 	public void Exit(){
 		StartCoroutine (DoSwitchLevel ());
-	}
-
-	[PunRPC]
-	public void Test(){
-		Debug.Log ("RPC Works");
 	}
 }

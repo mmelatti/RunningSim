@@ -14,8 +14,6 @@ public class PushupCounter : MonoBehaviour {
 	}
 	
 	void Update () {
-		Debug.Log (head.gameObject.transform.position.y);
-
 		myText.text = PlayerPrefs.GetInt ("Pushups").ToString();
 
 		if (head.gameObject.transform.position.y < .027f) {
