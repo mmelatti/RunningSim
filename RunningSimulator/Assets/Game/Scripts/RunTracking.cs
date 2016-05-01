@@ -44,6 +44,10 @@ public class RunTracking : MonoBehaviour {
 	[PunRPC]
 	public void Run(){
 		//Customer.GetComponentInChildren<TVScript> ().TurnOnTv ();
-		Debug.Log("Run");
+	}
+
+	[PunRPC]
+	public void Rumble(){
+		Handheld.Vibrate ();
 	}
 }
