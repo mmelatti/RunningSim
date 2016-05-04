@@ -7,6 +7,7 @@ public class PushupCounter : MonoBehaviour {
 	public Text myText;
 	private bool down = false;
 	public GameObject head;
+	public AudioSource click;
 
 	void Start () {
 		down = false;
@@ -22,7 +23,7 @@ public class PushupCounter : MonoBehaviour {
 		if (head.gameObject.transform.position.y > .15f && down) {
 			down = false;
 			PlayerPrefs.SetInt ("Pushups", PlayerPrefs.GetInt ("Pushups") + 1);
-			Debug.Log (PlayerPrefs.GetInt ("Pushups"));
+			click.Play ();
 		}
 	}
 }
