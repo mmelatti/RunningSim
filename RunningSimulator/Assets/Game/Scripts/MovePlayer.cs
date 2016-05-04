@@ -6,8 +6,11 @@ public class MovePlayer : MonoBehaviour {
 	public Rigidbody myRigidBody;
 	public GameObject eye;
 	public int dayOfWeek;
+	private AudioSource footstep;
 
 	void Start () {
+		AudioSource[] audios = GetComponents<AudioSource>();
+		footstep = audios[0];
 
 		dayOfWeek = getIntDayOfWeek ();
 	}
@@ -23,6 +26,7 @@ public class MovePlayer : MonoBehaviour {
 
 	public void Run(){
 		if (PlayerPrefs.GetString ("Camera") == "cardboard") {
+			footstep.Play ();
 			StartCoroutine (RunCoroutine ());
 		}
 		//myRigidBody.velocity = eye.transform.forward * 2f;

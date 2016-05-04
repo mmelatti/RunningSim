@@ -80,6 +80,8 @@
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\CardboardiOSDevice.cs" />
      <Compile Include="Assets\Cardboard\Scripts\VRDevices\UnityEditorDevice.cs" />
      <Compile Include="Assets\Game\Scripts\CalendarKeeper.cs" />
+     <Compile Include="Assets\Game\Scripts\Cube.cs" />
+     <Compile Include="Assets\Game\Scripts\CubeStart.cs" />
      <Compile Include="Assets\Game\Scripts\EventHandlerTitle.cs" />
      <Compile Include="Assets\Game\Scripts\FindIfNewWeek.cs" />
      <Compile Include="Assets\Game\Scripts\Gametrak.cs" />
